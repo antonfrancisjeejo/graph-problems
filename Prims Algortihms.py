@@ -19,7 +19,7 @@ class Graph:
       print(current_tree[i], "-", i, "\t", self.graph[i][ current_tree[i] ] )
       total_cost+=self.graph[i][current_tree[i]]
     print("Total cost: %d"%total_cost)
-    
+#   Select a minimum which is connected to either any of the initial vertices 
   def primMST(self): 
     visited_weights = [sys.maxsize] * self.v 
     current_tree = [None] * self.v
